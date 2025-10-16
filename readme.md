@@ -56,12 +56,3 @@ python3 -m uvicorn main:app --reload
 #Crucially, check the entire repo scope AND the delete_repo scope.
 The server will be running at http://127.0.0.1:8000.
 
-4. Expose Your Server with ngrok
-Since your server is running locally, you need a tool like ngrok to make it accessible from the public internet.
-
-ngrok http 8000
-
-Ngrok will give you a public "Forwarding" URL (e.g., https://random-string.ngrok.io). Your full API endpoint that you submit to the instructors will be this URL plus /handle_task.
-
- I Tested the Endpoint
- 
