@@ -1,7 +1,5 @@
-#Crucially, check the entire repo scope AND the delete_repo scope.
 
-LLM Code Deployment Project
-This project contains a FastAPI server that automates the process of building, deploying, and updating a web application based on instructions received from an API. It uses an LLM to generate code and the GitHub API to manage deployment via GitHub Pages.
+
 
 How It Works
 API Endpoint: A single /handle_task endpoint listens for POST requests.
@@ -57,7 +55,7 @@ pip install -r requirements.txt
 Start the server using uvicorn. The --reload flag will automatically restart the server when you make changes to the code.
 
 python3 -m uvicorn main:app --reload
-
+#Crucially, check the entire repo scope AND the delete_repo scope.
 The server will be running at http://127.0.0.1:8000.
 
 4. Expose Your Server with ngrok
@@ -67,8 +65,8 @@ ngrok http 8000
 
 Ngrok will give you a public "Forwarding" URL (e.g., https://random-string.ngrok.io). Your full API endpoint that you submit to the instructors will be this URL plus /handle_task.
 
-Testing the Endpoint
-To test your server, you need a real URL to act as the evaluation_url.
+ I Tested the Endpoint
+To test   server,  you  need a real URL to act as the evaluation_url.
 
 Go to webhook.site.
 
